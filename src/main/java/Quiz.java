@@ -1,5 +1,14 @@
 import cstools.SimpleIO;
 
+/**
+ * Created on 2017-10-24 by Bryan Aaldering
+ * Lets the user participate in a quiz, played in the console
+ * Questions and matching answers must be provided in 2 separate text files, with each question/answer on a new line.
+ *
+ * @author Bryan Aaldering
+ * @version 1.0
+ *
+ */
 public class Quiz {
 
     public static void main(String args[]) {
