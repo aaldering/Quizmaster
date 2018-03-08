@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="cstools">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/cstools.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/cstools.jar!/" />
+    </SOURCES>
+  </library>
+</component>
