@@ -32,11 +32,8 @@ public class Quiz {
         String nameAnswersFile = SimpleIO.readLine();
         importQuestionsAndAnswers.setAnswersFile(SimpleIO.readFile(nameAnswersFile));
 
-        String[] questions = importQuestionsAndAnswers.getQuestionsFile();
-        String[] answers = importQuestionsAndAnswers.getAnswersFile();
-
         //ask the questions
-        LetsPlay.play(questions.length, questions, answers);
+        LetsPlay.play(importQuestionsAndAnswers.getQuestionsFile().length, importQuestionsAndAnswers.getQuestionsFile(), importQuestionsAndAnswers.getAnswersFile(), player.getName());
     }
 
     private static void greeter(){
