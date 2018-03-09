@@ -20,7 +20,7 @@ public class Quiz {
         //set players name
         player.setName(SimpleIO.readLine());
 
-        //greet him
+        //greet the player
         System.out.println("Hey " + player.getName() + " let's play a game!");
 
         //import questions and answers
@@ -37,10 +37,9 @@ public class Quiz {
 
         //ask the questions
         LetsPlay.play(questions.length, questions, answers);
-
     }
 
-    public static void greeter(){
+    private static void greeter(){
         System.out.println("Hello! Please enter your name: \n");
     }
 

@@ -11,14 +11,14 @@ public class LetsPlay {
         int countCorrectNumberQuestions = 0;
 
         int questionsAsked = 0;
-        ArrayList<Integer> questionList = new ArrayList<>();
+        ArrayList<Integer> listQuestionsAsked = new ArrayList<>();
 
         while (questionsAsked < numberOfQuestionsWanted){
             //use class RandomNumGen to randomly select questions
             int randomNumber = RandomNumGen.randomNumber(questionsLenght);
-            if(questionList.contains(randomNumber)) {
+            if(listQuestionsAsked.contains(randomNumber)) {
                 continue;
-            } else {questionList.add(randomNumber);
+            } else {listQuestionsAsked.add(randomNumber);
             }
 
             System.out.println(questions[randomNumber]);
