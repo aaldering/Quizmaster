@@ -31,6 +31,8 @@ public class LetsPlay {
             System.out.println("\n Please enter true of false");
             String userAnswer = SimpleIO.readLine();
 
+            userAnswer = userAnswer.toLowerCase();
+
             if(userAnswer.equals(answers[randomNumber])) {
                 countCorrectNumberQuestions++;
                 System.out.println("Correct answer!");
