@@ -20,6 +20,7 @@ public class ImportQATest {
         ImportQuestionsAndAnswers importAnswers = new ImportQuestionsAndAnswers();
         String answersFile = "./answers.txt";
         importAnswers.setAnswersFile(SimpleIO.readFile(answersFile));
+        assertNotNull(importAnswers);
     }
 
     @Test
