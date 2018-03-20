@@ -6,6 +6,12 @@ public class LetsPlay {
     public static void play(int questionsLenght, String[] questions, String[] answers, String name){
         System.out.println("How many questions do you want? \n");
         int numberOfQuestionsWanted = Integer.parseInt(SimpleIO.readLine());
+
+        if(numberOfQuestionsWanted > questionsLenght){
+            System.out.println("You cannot ask for more questions then the number of questions in the questions-file. Please choose a number below or equal to " + questionsLenght);
+            play(questionsLenght, questions, answers, name);
+        }
+
         System.out.println("I will now show you " + numberOfQuestionsWanted + " statements. \n You need to answer true or false." );
 
         int countCorrectNumberQuestions = 0;
